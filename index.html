@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press & Pubblicazioni | Junior Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #1a1a1a;
+            --text-sub: #666666;
+            --accent-bg: #f9f9f9;
+            --line-color: #eeeeee;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 600px;
+            padding: 60px 25px;
+        }
+
+        header {
+            margin-bottom: 50px;
+            border-bottom: 1px solid var(--line-color);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 400;
+            margin: 0;
+            letter-spacing: -0.02em;
+        }
+
+        .bio-note {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .press-container {
+            display: grid;
+            gap: 15px;
+        }
+
+        .publication-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--line-color);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .publication-link:hover {
+            background-color: var(--accent-bg);
+            border-color: var(--text-main);
+            transform: translateY(-2px);
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .content p {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+            margin: 8px 0 0 0;
+        }
+
+        .arrow {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--line-color);
+            transition: color 0.3s ease;
+        }
+
+        .publication-link:hover .arrow {
+            color: var(--text-main);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.85rem;
+            color: var(--text-sub);
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2.2rem; }
+            .publication-link { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h1>Press & Features</h1>
+            <span class="bio-note">Creatività, Estetica e Sostenibilità</span>
+        </header>
+
+        <main class="press-container">
+            
+            <a href="http://www.vogue.it/vogue-talents/gallery/polimoda-fashion-show-firenze-migliori-look-art-thou" class="publication-link" target="_blank">
+                <div class="content">
+                    <h2>Vogue Italia, July 2021</h2>
+                    
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="contributormagazine.com/fashion-story-colors-of-colors/" class="publication-link" target="_blank">
+                <div class="content">
+                    <h2>Contributor Magazine, August 2021</h2>
+                   
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="http://www.fashioncrossover-london.com/martina-giammillari-polimoda-2021-i4345" class="publication-link" target="_blank">
+                <div class="content">
+                    <h2>Fahion Crossover London, October 2021</h2>
+                    
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+            <a href="http://www.youtube.com/watch?v=0pQSXdZIzck" class="publication-link" target="_blank">
+                <div class="content">
+                    <h2>Music video, Senhit - POW, June 2023</h2>
+                   
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+        </main>
+
+        <footer>
+            <p>Sviluppato con precisione sartoriale • <a href="LINK_TUO_GITHUB">GitHub</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
